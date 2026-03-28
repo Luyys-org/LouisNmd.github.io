@@ -1,0 +1,68 @@
+{
+  "name": "Louis Normand",
+  "title": "Software Developer",
+  "contact": {
+    "email": "louis.normand@outlook.com",
+    "phone": "+1 (438) 466-0059",
+    "location": "Montreal, Canada",
+    "github": "https://github.com/LouisNmd",
+    "linkedin": "https://www.linkedin.com/in/louis-normand-15161a170/"
+  },
+  "summary": "I am a software developer who enjoys turning complex business needs into reliable products people can trust. I work mainly with JavaScript, TypeScript, Java, and Python, and I am especially motivated by projects where clean architecture and delivery speed both matter. I have hands-on experience with CI/CD and infrastructure tooling such as Docker, Kubernetes, Jenkins, and GitHub Actions. Working in the finance industry taught me to stay calm under pressure, communicate clearly with stakeholders, and deliver with a strong focus on stability.",
+  "experience": [
+    {
+      "title": "Front Office Developer (V.I.E)",
+      "company": "Societe Generale",
+      "location": "Montreal, Canada",
+      "period": "Oct 2024 – Present",
+      "bullets": [
+        "Managed front-office applications with high-availability requirements using Java, Spring Boot, Angular, TypeScript, and Python scripts.",
+        "Conducted business analysis and requirements gathering to ensure applications met user needs.",
+        "Built and maintained CI/CD pipelines to improve deployment reliability with Jenkins and GitHub Actions.",
+        "Set up and maintained unit and integration tests on critical business flows to reduce production incidents.",
+        "Presented business demos to validate that applications aligned with user expectations."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Sylvamap",
+      "location": "Vertou, France",
+      "period": "Sep 2023 – Sep 2024",
+      "bullets": [
+        "Developed a web application for client management and project tracking for an external client using React and FastAPI (Python).",
+        "Created unit and integration tests around the most used client and project workflows.",
+        "Built CI/CD pipelines with GitHub Actions to automate testing and deployment."
+      ]
+    },
+    {
+      "title": "Backend Developer",
+      "company": "Younup",
+      "location": "Nantes, France",
+      "period": "Aug 2022 – Mar 2023",
+      "bullets": [
+        "Developed backend services for a French supermarket chain (Super U) to analyze grocery shopping data in real time using Java, Spring Boot, and Kafka.",
+        "Implemented targeted unit and integration tests to secure real-time data processing."
+      ]
+    },
+    {
+      "title": "Software Engineer - Internship",
+      "company": "Capgemini",
+      "location": "Nantes, France",
+      "period": "Feb 2022 – Jun 2022",
+      "bullets": [
+        "Developed a web application for a French insurance company to redesign life insurance contract management and creation using Java, Spring Boot, and Angular.",
+        "Added unit and integration tests to secure contract-management features."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master · Software Architecture",
+      "institution": "University of Nantes",
+      "location": "Nantes, France",
+      "period": "2017 – 2022"
+    }
+  ],
+  "skills": ["CI/CD", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Java", "Spring Boot", "Angular", "TypeScript", "Python"],
+  "languages": ["French (native)", "English (fluent)"]
+}
