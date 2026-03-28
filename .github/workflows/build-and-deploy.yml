@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       trigger-release:
-        description: "Trigger a release after deployment"
+        description: "Trigger a release"
         type: boolean
         default: false
       version-type:
