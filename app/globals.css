@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f9f8f5;
+  --foreground: #111827;
 }
 
 @theme inline {
@@ -14,13 +14,60 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f9f8f5;
+    --foreground: #111827;
   }
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 8% 8%, rgba(217, 119, 6, 0.1), transparent 36%),
+    radial-gradient(circle at 92% 12%, rgba(14, 116, 144, 0.09), transparent 34%),
+    radial-gradient(circle at 50% 92%, rgba(100, 116, 139, 0.08), transparent 30%),
+    var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.drift {
+  animation: drift 8s ease-in-out infinite;
+}
+
+.reveal {
+  opacity: 0;
+  animation: reveal 700ms cubic-bezier(0.21, 1.02, 0.73, 1) forwards;
+}
+
+.delay-1 {
+  animation-delay: 120ms;
+}
+
+.delay-2 {
+  animation-delay: 220ms;
+}
+
+.delay-3 {
+  animation-delay: 320ms;
 }
