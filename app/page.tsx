@@ -1,9 +1,17 @@
 import resume from "@/data/resume.json";
 import { Github, Linkedin, MapPin, Globe, Mail, Phone, BookOpen } from "lucide-react";
 import { FR, CA } from "country-flag-icons/react/3x2";
+import { useMemo } from "react";
 
 export default function Home() {
-  const { name, title, contact, summary, experience, education, skills, languages } = resume;
+  const { name, title, contact, summary, experience, education, languages } = resume;
+  const skills = useMemo(() => {
+    const skillSet = new Set<string>();
+    experience.forEach((job) => {
+      job.skills?.forEach((skill) => skillSet.add(skill));
+    });
+    return skillSet;
+  }, [experience]);
   const spotlight = experience.slice(0, 3);
 
   const getCountryFlag = (location: string) => {
@@ -75,7 +83,7 @@ export default function Home() {
             <article className="reveal delay-2 rounded-3xl border border-zinc-200/80 bg-white/90 p-6 shadow-lg">
               <h2 className="text-xl font-black text-zinc-900">Toolkit</h2>
               <div className="mt-4 flex flex-wrap gap-2">
-                {skills.map((skill, index) => (
+                {Array.from(skills).map((skill, index) => (
                   <span
                     key={skill}
                     className={`rounded-full border px-3 py-1.5 text-sm font-semibold ${skillStyles[index % skillStyles.length]}`}
