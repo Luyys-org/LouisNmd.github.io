@@ -5,7 +5,7 @@ import resume from "@/data/resume.json";
 import { ArrowLeft, Building2, CalendarRange, MapPin, Sparkles } from "lucide-react";
 import { FR, CA } from "country-flag-icons/react/3x2";
 import { useSearchParams } from "next/navigation";
-import { useMemo } from "react";
+import { useMemo, Suspense } from "react";
 
 const getCountryFlag = (location: string) => {
 	if (location.includes("Canada")) return <CA title="Canada" style={{ height: "20px", width: "28px" }} />;
@@ -22,7 +22,7 @@ const skillStyles = [
 	"bg-blue-50 text-blue-700 border-blue-200",
 ];
 
-export default function ExperiencePage() {
+function ExperienceContent() {
 	const searchParams = useSearchParams();
 	const experiences = resume.experience;
 
@@ -144,5 +144,13 @@ export default function ExperiencePage() {
 				</section>
 			</main>
 		</div>
+	);
+}
+
+export default function ExperiencePage() {
+	return (
+		<Suspense>
+			<ExperienceContent />
+		</Suspense>
 	);
 }
