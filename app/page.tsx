@@ -1,10 +1,14 @@
+"use client"
+
 import resume from "@/data/resume.json";
 import { Github, Linkedin, MapPin, Globe, Mail, Phone, BookOpen } from "lucide-react";
 import { FR, CA } from "country-flag-icons/react/3x2";
 import { useMemo } from "react";
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const { name, title, contact, summary, experience, education, languages } = resume;
+  const router = useRouter();
   const skills = useMemo(() => {
     const skillSet = new Set<string>();
     experience.forEach((job) => {
@@ -128,8 +132,9 @@ export default function Home() {
         <section className="grid gap-4 md:grid-cols-3">
           {spotlight.map((job, index) => (
             <article
+              onClick={() => router.push(`/experience?id=${job.id}`)}
               key={job.company}
-              className={`reveal rounded-3xl border bg-white/90 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 ${
+              className={`cursor-pointer reveal rounded-3xl border bg-white/90 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 ${
                 index === 0
                   ? "border-zinc-200"
                   : index === 1
