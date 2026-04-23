@@ -23,7 +23,7 @@
         "Set up and maintained unit and integration tests on critical business flows to reduce production incidents.",
         "Presented business demos to validate that applications aligned with user expectations."
       ],
-      "skills": ["Java", "Spring Boot", "Angular", "TypeScript", "Python", "Jenkins", "GitHub Actions"]
+      "skills": ["Java", "Spring Boot", "Angular", "TypeScript", "Python", "Jenkins", "GitHub Actions", "UNIX/bash", "Windows/batch"]
     },
     {
       "id": "sylvamap",
@@ -34,7 +34,8 @@
       "bullets": [
         "Developed a web application for client management and project tracking for an external client using React and FastAPI (Python).",
         "Created unit and integration tests around the most used client and project workflows.",
-        "Built CI/CD pipelines with GitHub Actions to automate testing and deployment."
+        "Built CI/CD pipelines with GitHub Actions to automate testing and deployment.",
+        "Following an agile process, collaborated with the client to gather requirements and deliver features in a timely manner."
       ],
       "skills": ["React", "FastAPI", "Python", "GitHub Actions"]
     },
