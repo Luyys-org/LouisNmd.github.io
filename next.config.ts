@@ -10,6 +10,7 @@ export default function nextConfig(phase: string): NextConfig {
   return {
     output: "export",
     trailingSlash: true,
+    typedRoutes: true,
     distDir: "dist",
     images: {
       unoptimized: true,

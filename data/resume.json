@@ -11,6 +11,7 @@
   "summary": "I am a software developer who enjoys turning complex business needs into reliable products people can trust. I work mainly with JavaScript, TypeScript, Java, and Python, and I am especially motivated by projects where clean architecture and delivery speed both matter. I have hands-on experience with CI/CD and infrastructure tooling such as Docker, Kubernetes, Jenkins, and GitHub Actions. Working in the finance industry taught me to stay calm under pressure, communicate clearly with stakeholders, and deliver with a strong focus on stability.",
   "experience": [
     {
+      "id": "vie-societe-generale",
       "title": "Front Office Developer (V.I.E)",
       "company": "Societe Generale",
       "location": "Montreal, Canada",
@@ -21,9 +22,11 @@
         "Built and maintained CI/CD pipelines to improve deployment reliability with Jenkins and GitHub Actions.",
         "Set up and maintained unit and integration tests on critical business flows to reduce production incidents.",
         "Presented business demos to validate that applications aligned with user expectations."
-      ]
+      ],
+      "skills": ["Java", "Spring Boot", "Angular", "TypeScript", "Python", "Jenkins", "GitHub Actions", "UNIX/bash", "Windows/batch"]
     },
     {
+      "id": "sylvamap",
       "title": "Software Engineer",
       "company": "Sylvamap",
       "location": "Vertou, France",
@@ -31,10 +34,13 @@
       "bullets": [
         "Developed a web application for client management and project tracking for an external client using React and FastAPI (Python).",
         "Created unit and integration tests around the most used client and project workflows.",
-        "Built CI/CD pipelines with GitHub Actions to automate testing and deployment."
-      ]
+        "Built CI/CD pipelines with GitHub Actions to automate testing and deployment.",
+        "Following an agile process, collaborated with the client to gather requirements and deliver features in a timely manner."
+      ],
+      "skills": ["React", "FastAPI", "Python", "GitHub Actions"]
     },
     {
+      "id": "younup",
       "title": "Backend Developer",
       "company": "Younup",
       "location": "Nantes, France",
@@ -42,9 +48,11 @@
       "bullets": [
         "Developed backend services for a French supermarket chain (Super U) to analyze grocery shopping data in real time using Java, Spring Boot, and Kafka.",
         "Implemented targeted unit and integration tests to secure real-time data processing."
-      ]
+      ],
+      "skills": ["Java", "Spring Boot", "Kafka"]
     },
     {
+      "id": "capgemini-internship",
       "title": "Software Engineer - Internship",
       "company": "Capgemini",
       "location": "Nantes, France",
@@ -52,7 +60,8 @@
       "bullets": [
         "Developed a web application for a French insurance company to redesign life insurance contract management and creation using Java, Spring Boot, and Angular.",
         "Added unit and integration tests to secure contract-management features."
-      ]
+      ],
+      "skills": ["Java", "Spring Boot", "Angular"]
     }
   ],
   "education": [
@@ -63,6 +72,5 @@
       "period": "2017 – 2022"
     }
   ],
-  "skills": ["CI/CD", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Java", "Spring Boot", "Angular", "TypeScript", "Python"],
   "languages": ["French (native)", "English (fluent)"]
 }
